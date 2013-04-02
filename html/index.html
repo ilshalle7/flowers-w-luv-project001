@@ -1,183 +1,94 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <hr color="#CC2EFA" size= "11">
-    <div style="position: absolute; top:180px; left: 30px;">
-        <img  class="center" src="C:\Users\Sami\Documents\GitHub\flowers-w-luv-project001\html\images\fwl-logo.jpg" width="200" height="200"></img>
-    </div>
-        
+        <p color="#A319FF" size= "15" height="50"></p>
+        <title>Flowers with Love</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Sliding Background Image Menu with jQuery" />
+        <meta name="keywords" content="jquery, background image, image, menu, navigation, panels" />
+		<meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/sbimenu.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=News+Cycle&v1' rel='stylesheet' type='text/css' />
+
     </head>
     <body>
+		<div class="container">
+		
+			<div id="container">
+				<img src="C:\Users\Sami\Documents\GitHub\flowers-w-luv-project001\html\images\trans.jpg" alt="image" height="200" width="189">
+			</div>
+			<div class="content">
+				<div id="sbi_container" class="sbi_container">
+					<div class="sbi_panel" data-bg="images/1.jpg">
+						<a href="#" class="sbi_label">Plants</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Flowers</a></li>
+								<li><a href="#">Plants</a></li>
+								<li><a href="#">Trees</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sbi_panel" data-bg="images/2.jpg">
+						<a href="#" class="sbi_label">Events</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Weddings</a></li>
+								<li><a href="#">Birthdays</a></li>
+								<li><a href="#">Anniversaries</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sbi_panel" data-bg="images/3.jpg">
+						<a href="#" class="sbi_label">Contact Us</a>
+						<div class="sbi_content">
+							<ul>
+								<li><a href="#">Email</a></li>
+								<li><a href="#">Phone</a></li>
+								<li><a href="#">Address</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="more">
+				
+			</div>
+			<div class="topbar">
+				<footer>
+				<div style="line-height: 120%">
+					<p align="right"><a href="#">Back to top</a></p>
+					<p><a href="#">Home</a></p> 
+					<p><a href="#">About Us</a></p>
+					<p><a href="#">Contact Us</a></p>
+        			
+        		</div>
+        			<p align="center"><small><font size="2" color="white"><sup>&copy;</sup> Flowers With Love 2013 </font></a></p><p align="center"></font><a href="#">Privacy</a><font color="white"><b>&middot;</b></font><a href="#">Terms</a></p>
+        		</footer>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="keywords" content="jquery, background image, animate, menu, navigation, css3, cross-browser compatible"/>
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-        <style>
-            *{
-                margin:0;
-                padding:0;
-            }
-            
-            }
-            .reference{
-                margin:200px auto;
-                width:600px;
-                padding:20px;
-            }
-            .reference p a{
-                text-transform:uppercase;
-                text-shadow:1px 1px 1px #fff;
-                color:#666;
-                text-decoration:none;
-                font-size:10px;
 
-            }
-            .reference p a:hover{
-                color:#333;
-            }
-        </style>
-        <!--[if lte IE 6]>
-             <link rel="stylesheet" href="css/styleIE6.css" type="text/css" media="screen"/>
-        <![endif]-->
-        <div id="content">
-
-            <a class="back" href="http://tympanus.net/codrops/2010/05/05/beautiful-background-image-navigation-with-jquery"></a>
-            <div id="menuWrapper" class="menuWrapper bg1">
-                <ul class="menu" id="menu">
-                    <li class="bg1" style="background-position:0 0;">
-                        <a id="bg1" href="#">Our Passion</a>
-                        <ul class="sub1" style="background-position:0 0;">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
-                            <li><a href="#">Submenu 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="bg1" style="background-position:-266px 0px;">
-                        <a id="bg2" href="#">Our Brands</a>
-                        <ul class="sub2" style="background-position:-266px 0;">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
-                            <li><a href="#">Submenu 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="last bg1" style="background-position:-532px 0px;">
-                        <a id="bg3" href="#">Contact</a>
-                        <ul class="sub3" style="background-position:-266px 0;">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
-                            <li><a href="#">Submenu 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-        
-        </div>
-        <!-- The JavaScript -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.bgpos.js"></script>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.bgImageMenu.js"></script>
 		<script type="text/javascript">
-            $(function() {
-                /* position of the <li> that is currently shown */
-                var current = 0;
-				
-				var loaded  = 0;
-				for(var i = 1; i <4; ++i)
-					$('<img />').load(function(){
-						++loaded;
-						if(loaded == 3){
-							$('#bg1,#bg2,#bg3').mouseover(function(e){
-								
-								var $this = $(this);
-								/* if we hover the current one, then don't do anything */
-								if($this.parent().index() == current)
-									return;
-
-								/* item is bg1 or bg2 or bg3, depending where we are hovering */
-								var item = e.target.id;
-
-								/*
-								this is the sub menu overlay. Let's hide the current one
-								if we hover the first <li> or if we come from the last one,
-								then the overlay should move left -> right,
-								otherwise right->left
-								 */
-								if(item == 'bg1' || current == 2)
-									$('#menu .sub'+parseInt(current+1)).stop().animate({backgroundPosition:"(-266px 0)"},300,function(){
-										$(this).find('li').hide();
-									});
-								else
-									$('#menu .sub'+parseInt(current+1)).stop().animate({backgroundPosition:"(266px 0)"},300,function(){
-										$(this).find('li').hide();
-									});
-
-								if(item == 'bg1' || current == 2){
-									/* if we hover the first <li> or if we come from the last one, then the images should move left -> right */
-									$('#menu > li').animate({backgroundPosition:"(-800px 0)"},0).removeClass('bg1 bg2 bg3').addClass(item);
-									move(1,item);
-								}
-								else{
-									/* if we hover the first <li> or if we come from the last one, then the images should move right -> left */
-									$('#menu > li').animate({backgroundPosition:"(800px 0)"},0).removeClass('bg1 bg2 bg3').addClass(item);
-									move(0,item);
-								}
-
-								/*
-								We want that if we go from the first one to the last one (without hovering the middle one),
-								or from the last one to the first one, the middle menu's overlay should also slide, either
-								from left to right or right to left.
-								 */
-								if(current == 2 && item == 'bg1'){
-									$('#menu .sub'+parseInt(current)).stop().animate({backgroundPosition:"(-266px 0)"},300);
-								}
-								if(current == 0 && item == 'bg3'){
-									$('#menu .sub'+parseInt(current+2)).stop().animate({backgroundPosition:"(266px 0)"},300);
-								}
-
-								
-								/* change the current element */
-								current = $this.parent().index();
-								
-								/* let's make the overlay of the current one appear */
-							   
-								$('#menu .sub'+parseInt(current+1)).stop().animate({backgroundPosition:"(0 0)"},300,function(){
-									$(this).find('li').fadeIn();
-								});
-							});
-						}	
-					}).attr('src', 'images/'+i+'.jpg');
-				
-							
-                /*
-                dir:1 - move left->right
-                dir:0 - move right->left
-                 */
-                function move(dir,item){
-                    if(dir){
-                        $('#bg1').parent().stop().animate({backgroundPosition:"(0 0)"},200);
-                        $('#bg2').parent().stop().animate({backgroundPosition:"(-266px 0)"},300);
-                        $('#bg3').parent().stop().animate({backgroundPosition:"(-532px 0)"},400,function(){
-                            $('#menuWrapper').removeClass('bg1 bg2 bg3').addClass(item);
-                        });
-                    }
-                    else{
-                        $('#bg1').parent().stop().animate({backgroundPosition:"(0 0)"},400,function(){
-                            $('#menuWrapper').removeClass('bg1 bg2 bg3').addClass(item);
-                        });
-                        $('#bg2').parent().stop().animate({backgroundPosition:"(-266px 0)"},300);
-                        $('#bg3').parent().stop().animate({backgroundPosition:"(-532px 0)"},200);
-                    }
-                }
-            });
-        </script>
-
+			$(function() {
+				$('#sbi_container').bgImageMenu({
+					defaultBg	: 'images/fwl-logo.jpg',
+					border		: 1,
+					type		: {
+						mode		: 'seqFade',
+						speed		: 250,
+						easing		: 'jswing',
+						seqfactor	: 100
+					}
+				});
+			});
+		</script>
     </body>
-    <footer style="background-color:#CC2EFA; height: 50px;">
-       <p align="center"><a href="index.html">Home </a></small> <em> | </em>
-       <a href="contactus.html">Contact Us </a></small> <em> | </em> 
-       <a href="aboutus.html">About Us </a></small></p>
-       <p align="center"><small>Flowers with Love 2013. All rights reserved. <a href="privacypolicy.html">Privacy Policy</a></small></p>  
-    </footer>
 </html>
-
-
